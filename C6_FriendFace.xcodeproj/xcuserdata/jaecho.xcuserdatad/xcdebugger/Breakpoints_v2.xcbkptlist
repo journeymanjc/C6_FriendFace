@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "526D1E12-6FB0-4164-99B9-A026C1AEC855"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "C6_FriendFace/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - bdd364a34f73af68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in C6_FriendFace.ContentView.body.getter : some"
+                  moduleName = "C6_FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaecho/Desktop/SourceCode/HackingWithSwift/100DaysOfSwiftUI/C6_FriendFace/C6_FriendFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - f0df656fffa75941"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in C6_FriendFace.ContentView.body.getter : some"
+                  moduleName = "C6_FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaecho/Desktop/SourceCode/HackingWithSwift/100DaysOfSwiftUI/C6_FriendFace/C6_FriendFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - fefeb6a4da946366"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in C6_FriendFace.ContentView.body.getter : some"
+                  moduleName = "C6_FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaecho/Desktop/SourceCode/HackingWithSwift/100DaysOfSwiftUI/C6_FriendFace/C6_FriendFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

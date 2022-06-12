@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		747387562852FE3C006EDD8E /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747387552852FE3C006EDD8E /* DetailedView.swift */; };
 		74E08E3228503AB50014CC9A /* C6_FriendFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E08E3128503AB50014CC9A /* C6_FriendFaceApp.swift */; };
 		74E08E3428503AB50014CC9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E08E3328503AB50014CC9A /* ContentView.swift */; };
 		74E08E3628503AB60014CC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E08E3528503AB60014CC9A /* Assets.xcassets */; };
 		74E08E3928503AB60014CC9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E08E3828503AB60014CC9A /* Preview Assets.xcassets */; };
+		74E08E4028503AF70014CC9A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E08E3F28503AF70014CC9A /* User.swift */; };
+		74E08E4228503AFF0014CC9A /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E08E4128503AFF0014CC9A /* Friend.swift */; };
+		74E08E4528503C4A0014CC9A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E08E4428503C4A0014CC9A /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		747387552852FE3C006EDD8E /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
 		74E08E2E28503AB50014CC9A /* C6_FriendFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C6_FriendFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E08E3128503AB50014CC9A /* C6_FriendFaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C6_FriendFaceApp.swift; sourceTree = "<group>"; };
 		74E08E3328503AB50014CC9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74E08E3528503AB60014CC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74E08E3828503AB60014CC9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74E08E3F28503AF70014CC9A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74E08E4128503AFF0014CC9A /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		74E08E4428503C4A0014CC9A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 		74E08E2528503AB50014CC9A = {
 			isa = PBXGroup;
 			children = (
+				74E08E4428503C4A0014CC9A /* ViewModel.swift */,
 				74E08E3028503AB50014CC9A /* C6_FriendFace */,
 				74E08E2F28503AB50014CC9A /* Products */,
 			);
@@ -53,6 +62,8 @@
 			children = (
 				74E08E3128503AB50014CC9A /* C6_FriendFaceApp.swift */,
 				74E08E3328503AB50014CC9A /* ContentView.swift */,
+				747387552852FE3C006EDD8E /* DetailedView.swift */,
+				74E08E4328503C210014CC9A /* Model */,
 				74E08E3528503AB60014CC9A /* Assets.xcassets */,
 				74E08E3728503AB60014CC9A /* Preview Content */,
 			);
@@ -65,6 +76,15 @@
 				74E08E3828503AB60014CC9A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74E08E4328503C210014CC9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74E08E3F28503AF70014CC9A /* User.swift */,
+				74E08E4128503AFF0014CC9A /* Friend.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E08E4528503C4A0014CC9A /* ViewModel.swift in Sources */,
 				74E08E3428503AB50014CC9A /* ContentView.swift in Sources */,
 				74E08E3228503AB50014CC9A /* C6_FriendFaceApp.swift in Sources */,
+				74E08E4028503AF70014CC9A /* User.swift in Sources */,
+				747387562852FE3C006EDD8E /* DetailedView.swift in Sources */,
+				74E08E4228503AFF0014CC9A /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
