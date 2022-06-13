@@ -8,19 +8,19 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "C6_FriendFace/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - bdd364a34f73af68"
+                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - bdd364a34f7350ba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -30,12 +30,12 @@
                   urlString = "file:///Users/jaecho/Desktop/SourceCode/HackingWithSwift/100DaysOfSwiftUI/C6_FriendFace/C6_FriendFace/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "264">
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "304">
                </Location>
                <Location
-                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - f0df656fffa75941"
+                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - f0df656fffa7a693"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,12 +45,12 @@
                   urlString = "file:///Users/jaecho/Desktop/SourceCode/HackingWithSwift/100DaysOfSwiftUI/C6_FriendFace/C6_FriendFace/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "40">
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
-                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - fefeb6a4da946366"
+                  uuid = "304D96EB-595D-4CA1-9B29-1FDE397413D4 - fefeb6a4da949cb4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -60,11 +60,27 @@
                   urlString = "file:///Users/jaecho/Desktop/SourceCode/HackingWithSwift/100DaysOfSwiftUI/C6_FriendFace/C6_FriendFace/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "36">
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "84">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC1C633F-CDDC-4DE5-A249-A00C1B6FF6B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "C6_FriendFace/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -16,28 +16,71 @@ class FriendFaceUser: ObservableObject{
 struct ContentView: View {
 	
 	@State private var users = FriendFaceUser().users
+	
+	@Environment(\.managedObjectContext) var moc
+	@FetchRequest(sortDescriptors: []) var cachedUsers: FetchedResults<CachedUser>
+	
     var body: some View {
 		 NavigationView{
 			 
-			 List(users, id: \.id){ user in
-				 HStack{
+//			 List(users, id: \.id){ user in
+//				 HStack{
+//					 NavigationLink{
+//						 DetailedView(user: user)
+//					 } label: {
+//						 Text(user.name)
+//					 }
+//
+//					 Spacer()
+//
+//					 Text(user.isActive ? "ACTIVE" : "NOT ACTIVE")
+//						 .font(.system(size: 10.0))
+//				 }
+//			 }
+			 List{
+				 ForEach(cachedUsers, id: \.self) { user in
 					 NavigationLink{
-						 DetailedView(user: user)
+						 DetailedView (user: user)
 					 } label: {
-						 Text(user.name)
+						 Text(user.wrappedName)
 					 }
 					 
-					 Spacer()
-					 
-					 Text(user.isActive ? "ACTIVE" : "NOT ACTIVE")
-						 .font(.system(size: 10.0))
 				 }
 			 }
 		 }
 		.padding()
 		.task{
 			if users.isEmpty{
+				//after loading the data need to save to CoreData
 				await loadData()
+				
+				//Lets save to core data here
+				await MainActor.run{
+					for user in users{
+						let newCoreDataEntry = CachedUser(context: moc)
+						newCoreDataEntry.id = user.id
+						newCoreDataEntry.name = user.name
+						newCoreDataEntry.isActive = user.isActive
+						newCoreDataEntry.age = Int32(user.age)
+						newCoreDataEntry.company = user.company
+						newCoreDataEntry.email = user.email
+						newCoreDataEntry.address = user.address
+						newCoreDataEntry.about = user.about
+						newCoreDataEntry.registered = user.registered
+						let tagString = user.tags.joined(separator: ",")
+						newCoreDataEntry.tags = tagString
+						
+						for eachFriend in user.friends{
+							let newCoreFriendEntry = CachedFriend(context: moc)
+							newCoreFriendEntry.isAFriendOf = newCoreDataEntry
+							newCoreFriendEntry.id = eachFriend.id
+							newCoreFriendEntry.name = eachFriend.name
+							
+						}
+						try? moc.save
+					}
+						
+				}
 			}
 		}
     }
@@ -65,3 +108,12 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+
+
+
+
+
+

@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct DetailedView: View {
-	var user: User
+	var user: CachedUser
     var body: some View {
 		 VStack{
-			 Text(user.name)
-			 Text(user.about)
-			 Text(user.address)
+			 Text(user.wrappedName)
+			 Text(user.wrappedAbout)
+			 Text(user.wrappedAddress)
 			 Text("\(user.age)")
-			 Text(user.company)
-			 Text(user.email)
-			 ForEach(user.friends){ friend in
-				 Text(friend.name)
+			 Text(user.wrappedCompany)
+			 Text(user.wrappedEmail)
+			 ForEach(user.friendArray){ friend in
+				 Text(friend.wrappedName)
 			 }
-			 Text(user.registered)
+			 Text(user.wrappedRegistered)
 			 
 		 }
 		 
